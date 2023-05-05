@@ -20,6 +20,10 @@ body {
   background: var(--primary-bg-color);
 }
 
+/* 
+// Reset elements' styles
+*/
+
 .link {
   text-decoration: none;
 }
@@ -27,6 +31,37 @@ body {
 .list {
   list-style: none;
 }
+
+/* 
+// Utilities
+*/
+
+.button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.section .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+/* 
+// index.html
+*/
+
+/* Header Logo */
 
 .logo {
   font-family: var(--secondary-font-family);
@@ -43,9 +78,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.logo-footer {
-  color: var(--footer-text-color);
-}
+/* Header Navigation */
 
 .site-nav .link {
   font-weight: 500;
@@ -59,6 +92,8 @@ body {
 .site-nav .link:focus {
   color: var(--active-color);
 }
+
+/* Header Contacts */
 
 .contacts {
   font-style: normal;
@@ -76,6 +111,8 @@ body {
   color: var(--active-color);
 }
 
+/* Hero */
+
 .hero {
   background-color: var(--hero-and-footer-bg-color);
 }
@@ -90,17 +127,6 @@ body {
   color: var(--hero-text-color);
 }
 
-.button {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
 .button.primary {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
@@ -111,6 +137,8 @@ body {
   color: var(--hero-text-color);
   background-color: var(--active-color);
 }
+
+/* Features */
 
 .feature-title {
   font-weight: 500;
@@ -126,15 +154,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.section .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--secondary-text-color);
-}
+/* Gallery */
+
+/* Employees */
 
 .employees {
   background-color: var(--secondary-bg-color);
@@ -158,8 +180,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* Footer */
+
 .footer {
   background-color: var(--hero-and-footer-bg-color);
+}
+
+.logo-footer {
+  color: var(--footer-text-color);
 }
 
 .footer .text {
@@ -169,7 +197,11 @@ body {
   color: var(--footer-text-color);
 }
 
-/* PORTFOLIO */
+/* 
+// Portfolio
+*/
+
+/* Portfolio Filter */
 
 .button.filter {
   color: var(--accent-color);
@@ -181,6 +213,8 @@ body {
   color: var(--hero-text-color);
   background-color: var(--active-color);
 }
+
+/* Portfolio Projects */
 
 .projects-list .link {
   color: inherit;
