@@ -127,15 +127,11 @@ img {
 .page-header-container {
   display: flex;
   align-items: center;
-
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 
 .page-header-container .link {
@@ -160,11 +156,15 @@ img {
   color: var(--secondary-text-color);
 }
 
+.page-nav > .logo {
+  margin-right: 76px;
+}
+
 /* Header Navigation */
 
 .site-nav-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .site-nav-list .link {
@@ -189,7 +189,7 @@ img {
 
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contacts .link {
@@ -210,11 +210,12 @@ img {
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: var(--hero-and-footer-bg-color);
-  text-align: center;
 }
 
 .hero-title {
-  /* max-width: 496px; */
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
 
   font-weight: 700;
@@ -226,6 +227,10 @@ img {
 }
 
 .button.primary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 169px;
   padding: 16px 32px;
 
   color: var(--hero-text-color);
@@ -240,17 +245,13 @@ img {
 
 /* Features */
 
-.features.section {
-  padding-bottom: 0;
-}
-
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .features-list-item {
-  flex-basis: calc((100% - 3 * 24) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .feature-title {
@@ -270,13 +271,17 @@ img {
 
 /* Gallery */
 
+.gallery.section {
+  padding-top: 0;
+}
+
 .gallery-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .gallery-list-item {
-  flex-basis: calc((100% - 2 * 24) / 3);
+  flex-basis: calc((100% - 48) / 3);
 }
 
 /* Employees */
@@ -287,7 +292,7 @@ img {
 
 .employees-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .employees-list-item {
@@ -300,6 +305,7 @@ img {
 
 .employee-data {
   padding: 32px 16px;
+  text-align: center;
 }
 
 .employee-name {
@@ -325,12 +331,16 @@ img {
   background-color: var(--hero-and-footer-bg-color);
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-footer {
   color: var(--footer-text-color);
 }
 
 .footer .text {
-  margin-top: 16px;
   max-width: 264px;
 
   font-size: 16px;
@@ -353,7 +363,7 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
   margin-bottom: 72px;
 }
 
@@ -368,7 +378,7 @@ img {
 .filter-list .button:focus {
   color: var(--hero-text-color);
   background-color: var(--active-color);
-  border: 1px solid var(--active-color);
+  border: 1px solid transparent;
 }
 
 /* Portfolio Projects */
@@ -377,10 +387,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .project-list-item {
-  flex-basis: calc((100% - 2 * 24) / 3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .project-data {
